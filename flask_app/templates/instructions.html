@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Instructions</title>
+</head>
+<body>
+    <div class="container m-4">
+        <nav class="d-flex justify-content-between align-items-center">
+            <div class="col">
+                <h1>Welcome {{user_name.first_name}}</h1>
+            </div>
+    
+            <div class="col">
+                <a href="/dashboard">Dashboard</a>
+                <a href="/logout">Logout</a>
+            </div>
+    
+        </nav>
+    
+        <h2>{{recipe_info.name}}</h2>
+        <div class="row text-dark border border-dark w-50">
+            <p>Description: {{recipe_info.description}}</p>
+            <p>Under 30 Minutes: {{recipe_info.under30}}</p>
+            <p>Instructions: {{recipe_info.instructions}}</p>
+            <p>Date Made: {{recipe_info.made_on}}</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
